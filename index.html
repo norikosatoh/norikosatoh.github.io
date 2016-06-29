@@ -13,27 +13,43 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
   </head>
+  <body>
     <header>
       <div id="photo">
-        <img src="profile.jpg" alt="">
+        <img src="image2.jpg" alt="">
         <h1>Noriko Satoh</h1>
       </div>
     </header>
-  <body>
+
     <div class="container">
       <section>
-        <!-- <h2>About</h2> -->
         <h3>Profile</h3>
         <p>千葉県出身。神奈川県鎌倉市在住。</p>
         <p>現在、Ruby on Railsの勉強中です。</p>
-
-        <p>Githubのリンクは<a href="https://github.com/norikosatoh/">こちら。</a></p>    
-<!--
-        <ul>
-          <li><a href="https://www.facebook.com/tarokirameki" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com/tarokirameki" target="_blank">Twitter</a></li>
-        </ul>
--->
+        <p>Githubのリンクは<a href="https://github.com/norikosatoh/">こちら。</a></p>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6"><label>お名前：<input type="text" name="login_name"></label></div>
+            <div class="col-md-6"><label>メールアドレス：<input type="text" name="email"/></label></div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>ご用件を選んでください。</p>
+          <label class="check">用件1<input type="checkbox" name="hobby" value="1"></label>
+          <label class="check">用件2<input type="checkbox" name="hobby" value="2"></label>
+          <label class="check">用件3<input type="checkbox" name="hobby" value="3"></label>
+        </div>
+        <div>
+          <p>お問い合わせ内容を400字以内で記述してください。</p>
+          <textarea name="opinion" cols="50" rows="10" maxlength="400" placeholder="ご意見を入力してください。"></textarea>
+          <div>
+            <button type="button" class="btn btn-primary">送信</button>
+          </div>
+        </div>
+        
       </section>
       <footer>
         <p>&copy; 2016 Noriko Satoh.</p>
